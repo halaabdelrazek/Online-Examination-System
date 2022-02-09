@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Registration Form</title>
+	<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+	<div class="main">
+		<div class="signup">
+			<form>
+				<label for="chk" aria-hidden="true">Registration</label>
+				<input type="text" id="fname" name="fname" placeholder="First Name" onfocusout="validateFName()">
+				<span id="spanName"></span>
+				<input type="text" id="lname" name="Lname" placeholder="Last Name" onfocusout="validateLName()">
+				<span id="spanLName"></span>
+
+				<input type="text" id="email" name="email" placeholder="Email" onfocusout="validateEmail(this)">
+				<span id="emailSpan"></span>
+
+				<input type="password" id="Password" name="pswd" placeholder="Enter Password">
+				<span id="passwordSpan"></span>
+				<input type="password" id="repassword" name="repswd" placeholder="ReEnter Password">
+				<div class="repasswordSpan">
+				<span id="repasswordSpan"></span>
+
+				</div>
+			</form>
+
+			<button onclick="submit()">Sign up</button>
+
+		</div>
+
+
+	</div>
+
+	<script src="js/script.js"></script>
+</body>
+
+</html>
