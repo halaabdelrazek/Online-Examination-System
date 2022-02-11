@@ -158,7 +158,7 @@ var mytime = setInterval(function () {
     let formatted_min = minutes < 10 ? `0${minutes}` : `${minutes}`
     document.querySelector("span.time").innerHTML = `${formatted_min} : ${formatted_sec}`;
     if (document.querySelector("span.time").innerHTML === "05 : 00") {
-        submit();
+        // submit();
     }
 
 }, 1000);

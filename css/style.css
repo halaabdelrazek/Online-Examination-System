@@ -4,12 +4,11 @@ body{
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	min-height: 100vh;
+	min-height: 100vh; 
 	font-family: 'Jost', sans-serif;
-	/* background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e); */
 	background: #eee
-	/* background: #eee */
 }
+
 
 .wrapper-end{
 	margin: 0;
@@ -19,7 +18,6 @@ body{
 	align-items: center;
 	min-height: 100vh;
 	font-family: 'Jost', sans-serif;
-	/* background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e); */
 	background:#eee
 
 }
@@ -49,6 +47,7 @@ body{
 	position: relative;
 	width:100%;
 	height: 100%;
+	
 }
 label{
 	color: #fff;
@@ -77,11 +76,12 @@ input{
 
 
 }
-/* #repasswordSpan{
-	margin-left:50px;
-} */
+
 .repasswordSpan{
-	text-align: center;
+	width: 65%;
+	text-align:justify;
+	margin-left: 60px;
+	line-height: 1.4;
 
 }
 
@@ -126,5 +126,17 @@ button:hover{
   }
   
   #icon,#content{
-	  color: #573b8a;
+	color: #573b8a;
+	
+  }
+
+  #icon{
+	  margin-top: 50px;
+	  margin-left: 15px;
+  }
+
+  @media screen and (max-width: 600px) {
+	div.example {
+	  display: none;
+	}
   }
